@@ -1,2 +1,2 @@
 # phpDemo 
-###a card game that autogenerates ideas for hackathons
+### a card game that autogenerates ideas for hackathons
