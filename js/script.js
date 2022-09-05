@@ -1,21 +1,37 @@
 //Connect to mySQL for database to keep and generate ideas
-/* const projectIdeas=["robot", "Esport", "demo", "automotive", "Architecture", "Wholesale", "retail"];
+const category=["Artificial Intelligence", "Esport", "Automotive", "Architecture", "Wholesale", "Retail", "Blockchain", "Virtual Reality", "3D Printing", "Stock Market"];
+const feature =["Geolocation", "Augmented Reality", "Building Information Modelling", "Eco-friendliness", "Immersive interface", "Images", "Live Chat", "Knowledge Base or FAQ", "subscriptions", "Facial Recognition", "Blog", ];
+const userType=["Gamers", "Farmers", "Corporate Employees", "Students", "Architects", "Entrepreneurs", "retail", "Beginners", "Celebrities", "Restaurant Owners", "Athlete", "Dentist", "Barbers", "Runners", "Shoppers"];
 
 
 const getRandomNumber = (max) =>
 Math.floor(Math.random() * max);
 
-const getRandomName = () =>
-`${projectIdeas[getRandomNumber(projectIdeas.length)]}`;
+const getCategory = () =>
+`${category[getRandomNumber(category.length)]}`;
+
+const getFeature = () =>
+`${feature[getRandomNumber(feature.length)]}`;
+
+const getUserType = () =>
+`${userType[getRandomNumber(userType.length)]}`;
 
 
-const setRandomProject= () => {
-document.getElementById('getARandomName').innerText = getRandomName();
+const setCategory= () => {
+document.getElementById('getACategory').innerText = getCategory();
 }
-document.getElementById('generator').addEventListener('click', setRandomProject);
+const setFeature= () => {
+document.getElementById('getAFeature').innerText = getFeature();
+}
+const setUserType= () => {
+document.getElementById('getAUserType').innerText = getUserType();
+}
 
-setRandomProject();
- */
+
+document.getElementById('generatorCategory').addEventListener('click', setCategory);
+document.getElementById('generatorFeature').addEventListener('click', setFeature);
+document.getElementById('generatorUserType').addEventListener('click', setUserType);
+
 
 //Card flip
 

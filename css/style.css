@@ -5,7 +5,7 @@
 
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -50,7 +50,17 @@ table {
 	border-spacing: 0;
 }
 
+button{
+    padding: 0;
+    border-width: 3px;
+    border: 3px solid black;
+    margin: auto;
+}
 
+h1{
+    font: 3rem;
+    text-align: center;
+}
 /* Nav style  */
 nav{
     top: 0;
@@ -132,6 +142,8 @@ li a.active{
 
 /* Cards*/
 
+
+
 .card {
     width:40px;
     height:60px;
@@ -143,6 +155,15 @@ li a.active{
     font-family:courier;
     cursor:pointer;
 }
+
+.cardText{
+    font-size: larger;
+}
+
+.card-categories-list{
+    display: flex;
+    justify-content: center;
+}
   
 span.number, span.suit {
     width:100%;
@@ -150,9 +171,21 @@ span.number, span.suit {
     text-align:center;
     padding-top:8px;
 }
-
-.productHolder {
+.gallery-section .cardContainer {
     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+.cardHolder {
+    display: inline-block;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -237,6 +270,21 @@ span.number, span.suit {
     transform: rotateY(180deg);
   }
 
+  @media (max-width: 480px) {
+    .container {
+      max-width: 13rem;
+    }
+    .productHolder{
+      display: flex!important;
+      }
+    
+  }
+  @media (max-width: 992px) {
+    .custom_nav-container .nav_search-btn {
+      background-position: center;
+    }
+  
+  }  
 
 /* *main{
     margin: 0;

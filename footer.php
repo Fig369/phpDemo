@@ -1,4 +1,5 @@
 </div>
+</div>
 <script type="text/javascript" src="js/script.js">
     var myDeck = new deck();
 console.log(myDeck);
