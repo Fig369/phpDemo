@@ -1,29 +1,33 @@
 <?php
 include_once 'header.php';
 ?>
-    <a href="index.php"><img id="hack" src="img/logo.png" alt="hackanator"></a>
-<div class="container">
+<!--     <a href="index.php"><img id="hack" src="img/logo.png" alt="hackanator"></a> -->
+<div class="wrapper">
 
     <section class="index-intro">
-        <p>What should I tell you?</p>
+        <h1>Welcome to HACK-A-NATOR</h1>
+        <p>A website for you to generate hackathon ideas based on 3 simple topics</p>
     </section>
 
-    <section class="index-categories">
-        <h2>some basic categories</h2>
+    <section class="index-topics">
+        <h2>The 3 topics that you will draw cards from are</h2>
         <div class="index-categories-list">
             <div>
-                <h3>one</h3>
+                <h3>Category</h3>
             </div>
             <div>
-                <h3>two</h3>
+                <h3>Feature</h3>
             </div>
             <div>
-                <h3>three</h3>
+                <h3>User Type</h3>
             </div>
         </div>
     </section>
 
+    <section class="index-benefits">
+        <p>Use HACK-A-NATOR to find new ideas and challenges on your journey as a web developer.</p>
+    </section>
 
-    <?php
+<?php
 include_once 'footer.php';
 ?>

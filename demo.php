@@ -1,7 +1,7 @@
 <?php
 include_once 'header.php';
 ?>
-    <div class="productHolder">
+<!--     <div class="productHolder">
             <div class="galleryCard">
             <img  src="img/questionmark.png" alt="Category">
                 <div class="cardText">
@@ -10,6 +10,20 @@ include_once 'header.php';
                     <div id="getARandomName"></div>
                 </div>
             </div>
+    </div> -->
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>John Doe</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+            </div>
+        </div>
+    </div>
 
 <!--             <div class="galleryCard">
             <img  src="img/questionmark.png" alt="Feature">
